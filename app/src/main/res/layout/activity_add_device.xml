@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@mipmap/black"
+	tools:context="com.stoplight.blu.toys.activity.AddDeviceActivity">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:orientation="vertical">
+
+
+		<com.stoplight.blu.toys.view.TypefaceTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:gravity="center_horizontal"
+			android:text="Add your device"
+			android:textColor="@android:color/black"
+			android:textSize="@dimen/sp_34"
+			android:textStyle="bold"
+			app:typeface="@string/LittleOrion" />
+
+
+
+		<com.stoplight.blu.toys.view.TypefaceTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/dp_8"
+			android:gravity="center_horizontal"
+			android:text="Click the button to add your device"
+			android:textColor="@android:color/black"
+			android:textSize="@dimen/sp_28"
+			app:typeface="@string/LittleOrion" />
+
+
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/go_search_ble"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dp_30"
+			android:src="@mipmap/startbutton" />
+
+	</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@mipmap/black"
+	tools:context="com.stoplight.blu.toys.MainActivity">
+
+
+	<LinearLayout
+		android:id="@+id/stoplight_but"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:orientation="vertical">
+
+		<androidx.appcompat.widget.AppCompatImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@mipmap/timerlogo" />
+
+
+		<com.stoplight.blu.toys.view.TypefaceTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:gravity="center_horizontal"
+			android:text="Time made simple"
+			android:textColor="@android:color/black"
+			android:textSize="@dimen/sp_34"
+			app:typeface="@string/LittleOrion" />
+
+	</LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFCA05"
+	tools:context="com.stoplight.blu.toys.activity.SetTimeActivity">
+
+
+	<com.stoplight.blu.toys.view.TypefaceTextView
+		android:id="@+id/back_but"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dp_20"
+		android:layout_marginTop="@dimen/dp_20"
+		android:background="@drawable/black_thumb"
+		android:gravity="center"
+		android:padding="@dimen/dp_5"
+		android:text="Back"
+		android:textColor="@color/white"
+		android:textSize="@dimen/sp_28"
+		android:textStyle="bold"
+		app:typeface="@string/LittleOrion" />
+
+
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/animate"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="@dimen/dp_20"
+		android:layout_marginRight="@dimen/dp_40"
+		android:src="@mipmap/beecartoon" />
+
+
+	<com.stoplight.blu.toys.view.TypefaceTextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/back_but"
+		android:layout_centerHorizontal="true"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="@dimen/dp_30"
+		android:gravity="center"
+		android:text="Set Your Timer!"
+		android:textColor="@color/backer_back"
+		android:textSize="@dimen/sp_34"
+		android:textStyle="bold"
+		app:typeface="@string/LittleOrion" />
+
+
+	<LinearLayout
+		android:id="@+id/center"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/back_but"
+		android:layout_gravity="center"
+		android:layout_marginLeft="@dimen/dp_20"
+		android:layout_marginTop="@dimen/dp_60"
+		android:layout_marginRight="@dimen/dp_20"
+		android:orientation="vertical">
+
+
+		<com.stoplight.blu.toys.view.TypefaceTextView
+			android:id="@+id/will"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/back_but"
+			android:layout_centerHorizontal="true"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/dp_14"
+			android:gravity="center"
+			android:text="Select End Timer"
+			android:textColor="@color/backer_back"
+			android:textSize="@dimen/sp_24"
+			android:textStyle="bold"
+			app:typeface="@string/LittleOrion" />
+
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dp_75"
+			android:background="@drawable/black_thumb">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:gravity="center">
+
+				<com.stoplight.blu.toys.view.WheelView
+					android:id="@+id/wheel_hour"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical" />
+
+				<com.stoplight.blu.toys.view.TypefaceTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/back_but"
+					android:layout_centerHorizontal="true"
+					android:layout_gravity="center_vertical"
+					android:text=":"
+					android:textColor="@color/white"
+					android:textSize="@dimen/sp_24"
+					app:typeface="@string/LittleOrion" />
+
+				<com.stoplight.blu.toys.view.WheelView
+					android:id="@+id/wheel_minute"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical" />
+
+
+				<com.stoplight.blu.toys.view.TypefaceTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/back_but"
+					android:layout_centerHorizontal="true"
+					android:layout_gravity="center_vertical"
+					android:text=":"
+					android:textColor="@color/white"
+					android:textSize="@dimen/sp_24"
+					app:typeface="@string/LittleOrion" />
+
+				<com.stoplight.blu.toys.view.WheelView
+					android:id="@+id/wheel_second"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical" />
+
+
+				<com.stoplight.blu.toys.view.WheelView
+					android:id="@+id/wheel_am_pm"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="20dp" />
+
+
+			</LinearLayout>
+
+
+		</RelativeLayout>
+
+
+		<com.stoplight.blu.toys.view.TypefaceTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/back_but"
+			android:layout_centerHorizontal="true"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/dp_14"
+			android:gravity="center"
+			android:text="Select Time Interval"
+			android:textColor="@color/backer_back"
+			android:textSize="@dimen/sp_24"
+			android:textStyle="bold"
+			app:typeface="@string/LittleOrion" />
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dp_50"
+			android:background="@drawable/black_thumb"
+			android:padding="@dimen/dp_5">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:gravity="center">
+
+				<com.stoplight.blu.toys.view.WheelView
+					android:id="@+id/wheel_hour_dw"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical" />
+
+				<com.stoplight.blu.toys.view.TypefaceTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/back_but"
+					android:layout_centerHorizontal="true"
+					android:layout_gravity="center_vertical"
+					android:text=":"
+					android:textColor="@color/white"
+					android:textSize="@dimen/sp_24"
+					app:typeface="@string/LittleOrion" />
+
+				<com.stoplight.blu.toys.view.WheelView
+					android:id="@+id/wheel_minute_dw"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical" />
+
+
+				<com.stoplight.blu.toys.view.TypefaceTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/back_but"
+					android:layout_centerHorizontal="true"
+					android:layout_gravity="center_vertical"
+					android:text=":"
+					android:textColor="@color/white"
+					android:textSize="@dimen/sp_24"
+					app:typeface="@string/LittleOrion" />
+
+				<com.stoplight.blu.toys.view.WheelView
+					android:id="@+id/wheel_second_dw"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical" />
+
+			</LinearLayout>
+
+
+		</RelativeLayout>
+
+
+	</LinearLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/start_but"
+		android:layout_width="@dimen/dp_150"
+		android:layout_height="@dimen/dp_150"
+		android:layout_below="@+id/center"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="@dimen/dp_20"
+		android:background="@mipmap/resumebutton">
+
+		<com.stoplight.blu.toys.view.TypefaceTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:gravity="center"
+			android:text="Start"
+			android:textColor="@color/white"
+			android:textSize="@dimen/sp_30"
+			android:textStyle="bold" />
+
+	</RelativeLayout>
+
+
+	<LinearLayout
+
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="@dimen/dp_20"
+		android:gravity="center_horizontal"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:id="@+id/shop"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dp_80"
+			android:src="@mipmap/shopbutton" />
+
+
+		<ImageView
+			android:id="@+id/settings"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dp_80"
+			android:layout_marginLeft="@dimen/dp_8"
+			android:layout_marginRight="@dimen/dp_8"
+			android:src="@mipmap/settingsbutton" />
+
+		<ImageView
+			android:id="@+id/rate"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/dp_80"
+			android:src="@mipmap/ratebutton" />
+
+	</LinearLayout>
+
+
+</RelativeLayout>

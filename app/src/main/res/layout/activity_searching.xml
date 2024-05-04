@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@mipmap/black"
+	tools:context="com.stoplight.blu.toys.activity.SearchingActivity">
+
+
+	<LinearLayout
+		android:id="@+id/back_but"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dp_20"
+		android:layout_marginTop="@dimen/dp_20"
+		android:background="@drawable/black_thumb"
+		android:gravity="center">
+
+		<com.stoplight.blu.toys.view.TypefaceTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dp_5"
+			android:text="Back"
+			android:textColor="@color/white"
+			android:textSize="@dimen/sp_28"
+			android:textStyle="bold"
+			app:typeface="@string/LittleOrion" />
+
+	</LinearLayout>
+
+
+	<com.stoplight.blu.toys.view.TypefaceTextView
+		android:id="@+id/will"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/back_but"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="@dimen/dp_14"
+		android:gravity="center"
+		android:text=""
+		android:textColor="#E07A3A"
+		android:textSize="@dimen/sp_16" />
+
+	<com.stoplight.blu.toys.view.TypefaceTextView
+		android:id="@+id/animate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/will"
+		android:layout_marginLeft="@dimen/dp_40"
+		android:layout_marginTop="@dimen/dp_14"
+		android:gravity="center"
+		android:text=""
+		android:textColor="#E07A3A"
+		android:textSize="@dimen/sp_16" />
+
+
+	<RelativeLayout
+		android:id="@+id/select_dev"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_gravity="center"
+		android:orientation="vertical">
+
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/go_search_ble_2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true" />
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/go_search_ble_1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true" />
+
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/go_search_ble"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:src="@mipmap/searchrings" />
+
+
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:orientation="horizontal">
+
+
+			<com.stoplight.blu.toys.view.TypefaceTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Srearching"
+				android:textColor="@color/black"
+				android:textSize="@dimen/sp_22"
+				android:textStyle="bold" />
+
+			<com.stoplight.blu.toys.view.PointWaitBar
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="bottom"
+				android:layout_marginBottom="@dimen/dp_3" />
+
+		</LinearLayout>
+
+
+		<ImageView
+			android:id="@+id/iv_beecartoon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginEnd="@dimen/dp_60"
+			android:layout_marginTop="@dimen/dp_80"
+			android:src="@mipmap/beecartoon" />
+
+	</RelativeLayout>
+
+
+
+
+</RelativeLayout>

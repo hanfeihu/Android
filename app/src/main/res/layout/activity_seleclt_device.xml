@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@mipmap/black"
+	tools:context="com.stoplight.blu.toys.activity.SelectDeviceActivity">
+
+
+	<com.stoplight.blu.toys.view.TypefaceTextView
+		android:id="@+id/back_but"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dp_20"
+		android:layout_marginTop="@dimen/dp_20"
+		android:background="@drawable/black_thumb"
+		android:gravity="center"
+		android:padding="@dimen/dp_5"
+		android:text="Back"
+		android:textColor="@color/white"
+		android:textSize="@dimen/sp_28"
+		android:textStyle="bold" />
+
+
+	<LinearLayout
+		android:id="@+id/go_start"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_gravity="center"
+		android:orientation="vertical">
+
+
+		<com.stoplight.blu.toys.view.TypefaceTextView
+			android:id="@+id/will"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/back_but"
+			android:layout_centerHorizontal="true"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/dp_14"
+			android:gravity="center"
+			android:text="Select your device"
+			android:textColor="@color/backer_back"
+			android:textSize="@dimen/sp_24"
+			app:typeface="@string/OCRAEXT"
+			android:textStyle="bold" />
+
+
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dp_10"
+			android:layout_marginTop="@dimen/dp_20"
+			android:layout_marginRight="@dimen/dp_20"
+			android:padding="@dimen/dp_10"
+			app:layout_constraintTop_toBottomOf="@+id/include" />
+
+
+		<com.stoplight.blu.toys.view.TypefaceTextView
+			android:id="@+id/device_not_found"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/back_but"
+			android:layout_centerHorizontal="true"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/dp_14"
+			android:gravity="center"
+			android:visibility="invisible"
+			android:text="device not found"
+			android:textColor="@color/black"
+			android:textSize="@dimen/sp_14" />
+
+	</LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFCA05"
+	android:orientation="vertical"
+	tools:context="com.stoplight.blu.toys.activity.MusicActivity">
+
+	<com.stoplight.blu.toys.view.TypefaceTextView
+		android:id="@+id/back_but"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dp_20"
+		android:layout_marginTop="@dimen/dp_20"
+		android:background="@drawable/black_thumb"
+		android:gravity="center"
+		android:padding="@dimen/dp_5"
+		android:text="Back"
+		android:textColor="@color/white"
+		android:textSize="@dimen/sp_28"
+		android:textStyle="bold"
+		app:typeface="@string/LittleOrion" />
+
+	<com.stoplight.blu.toys.view.TypefaceTextView
+		android:id="@+id/open_music"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/back_but"
+		android:layout_marginLeft="@dimen/dp_20"
+		android:layout_marginTop="@dimen/dp_14"
+		android:gravity="center"
+		android:text="开机音乐"
+		android:textColor="@color/backer_back"
+		android:textSize="@dimen/sp_24"
+		android:textStyle="bold"
+		app:typeface="@string/LittleOrion" />
+
+	<com.stoplight.blu.toys.view.TypefaceTextView
+		android:id="@+id/close_music"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/back_but"
+		android:layout_marginLeft="@dimen/dp_20"
+		android:layout_marginTop="@dimen/dp_14"
+		android:gravity="center"
+		android:text="关机音乐"
+		android:textColor="@color/backer_back"
+		android:textSize="@dimen/sp_24"
+		android:textStyle="bold"
+		app:typeface="@string/LittleOrion" />
+
+</LinearLayout>

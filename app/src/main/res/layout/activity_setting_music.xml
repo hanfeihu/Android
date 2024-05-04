@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFCA05"
+	android:orientation="vertical"
+	tools:context="com.stoplight.blu.toys.activity.SettingMusicActivity">
+
+	<com.stoplight.blu.toys.view.TypefaceTextView
+		android:id="@+id/back_but"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dp_20"
+		android:layout_marginTop="@dimen/dp_20"
+		android:background="@drawable/black_thumb"
+		android:gravity="center"
+		android:padding="@dimen/dp_5"
+		android:text="Back"
+		android:textColor="@color/white"
+		android:textSize="@dimen/sp_28"
+		android:textStyle="bold"
+		app:typeface="@string/LittleOrion" />
+
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/recyclerView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dp_10"
+		android:layout_marginTop="@dimen/dp_20"
+		android:layout_marginRight="@dimen/dp_20"
+		android:padding="@dimen/dp_10"
+		app:layout_constraintTop_toBottomOf="@+id/include" />
+
+
+</LinearLayout>

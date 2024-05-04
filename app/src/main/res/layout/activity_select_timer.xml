@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFCA05"
+	tools:context="com.stoplight.blu.toys.activity.SelectTimerActivity">
+
+
+	<com.stoplight.blu.toys.view.TypefaceTextView
+		android:id="@+id/back_but"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dp_20"
+		android:layout_marginTop="@dimen/dp_20"
+		android:background="@drawable/black_thumb"
+		android:gravity="center"
+		android:padding="@dimen/dp_5"
+		android:text="Back"
+		android:textColor="@color/white"
+		android:textSize="@dimen/sp_28"
+		android:textStyle="bold"
+		app:typeface="@string/LittleOrion" />
+
+
+	<LinearLayout
+		android:id="@+id/center"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/back_but"
+		android:layout_gravity="center"
+		android:layout_marginLeft="@dimen/dp_20"
+		android:layout_marginTop="@dimen/dp_50"
+		android:layout_marginRight="@dimen/dp_20"
+		android:orientation="vertical">
+
+
+		<com.stoplight.blu.toys.view.TypefaceTextView
+			android:id="@+id/will"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/back_but"
+			android:layout_centerHorizontal="true"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/dp_14"
+			android:gravity="center"
+			android:text="Select Timer Type"
+			android:textColor="@color/backer_back"
+			android:textSize="@dimen/sp_24"
+			android:textStyle="bold"
+			app:typeface="@string/LittleOrion" />
+
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dp_20"
+			android:background="@drawable/black_thumb"
+			android:padding="@dimen/dp_5">
+
+			<com.stoplight.blu.toys.view.TypefaceTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:gravity="left"
+				android:padding="@dimen/dp_10"
+				android:text="Alarm sound at end"
+				android:textColor="@color/white"
+				android:textSize="@dimen/sp_18"
+				android:textStyle="bold"
+				app:typeface="@string/LittleOrion" />
+
+
+			<Switch
+				android:id="@+id/alarm_switch"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="@dimen/dp_20"
+				android:checked="true"
+				android:gravity="right"
+				android:switchMinWidth="@dimen/dp_30"
+				android:textOff=""
+				android:textOn=""
+				android:textSize="@dimen/sp_12"
+				android:thumb="@drawable/thumb"
+				android:track="@drawable/track"
+				tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+		</RelativeLayout>
+
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dp_20"
+			android:background="@drawable/black_thumb"
+			android:padding="@dimen/dp_5">
+
+			<com.stoplight.blu.toys.view.TypefaceTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:gravity="left"
+				android:padding="@dimen/dp_10"
+				android:text="Music"
+				android:textColor="@color/white"
+				android:textSize="@dimen/sp_18"
+				android:textStyle="bold"
+				app:typeface="@string/LittleOrion" />
+
+
+			<Switch
+				android:id="@+id/music_switch"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="@dimen/dp_20"
+				android:checked="true"
+				android:gravity="right"
+				android:switchMinWidth="@dimen/dp_30"
+				android:textOff=""
+				android:textOn=""
+				android:textSize="@dimen/sp_12"
+				android:thumb="@drawable/thumb"
+				android:track="@drawable/track"
+				tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+		</RelativeLayout>
+
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/dp_20"
+			android:background="@drawable/black_thumb"
+			android:padding="@dimen/dp_5">
+
+			<com.stoplight.blu.toys.view.TypefaceTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:gravity="left"
+				android:padding="@dimen/dp_10"
+				android:text="Set countdown to green"
+				android:textColor="@color/white"
+				android:textSize="@dimen/sp_18"
+				android:textStyle="bold"
+				app:typeface="@string/LittleOrion" />
+
+
+			<Switch
+				android:id="@+id/green_switch"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="@dimen/dp_20"
+				android:gravity="right"
+				android:switchMinWidth="@dimen/dp_30"
+				android:textOff=""
+				android:textOn=""
+				android:textSize="@dimen/sp_12"
+				android:thumb="@drawable/thumb"
+				android:track="@drawable/track"
+				tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+		</RelativeLayout>
+
+
+		<com.stoplight.blu.toys.view.TypefaceTextView
+			android:id="@+id/hiht_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="@dimen/dp_5"
+			android:text="Stoplight Golight by default uses the red light at end of the timer."
+			android:textColor="@android:color/black"
+			android:textSize="@dimen/sp_22"
+			app:typeface="@string/LittleOrion" />
+
+	</LinearLayout>
+
+
+
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="@dimen/dp_20"
+		android:gravity="center_horizontal"
+		android:orientation="horizontal"/>
+
+
+</RelativeLayout>
